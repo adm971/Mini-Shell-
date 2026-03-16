@@ -14,6 +14,8 @@
 			char cwd[1024];
 			getcwd(cwd, sizeof(cwd));
 			printf("MINI-SHELL PERSO \n :%s$ ", cwd);
+			printf("\033[1;36m%s\033[0m ", cwd);
+			printf("\033[1;33m$ \033[0m");
 		}
 		// Fonction pour afficher le prompt
 
