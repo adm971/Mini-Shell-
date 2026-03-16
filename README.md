@@ -1,5 +1,5 @@
-# Mini-Shell-
-Un shell bash simple que j'ai codé en C pour Linux 
+# Mini-Shell
+Un shell simple que j'ai codé en C pour Linux 
 
 C'est mon premier projet en C
 
@@ -23,6 +23,8 @@ Modifications à venir :
 -Ajout de la commande history 
 
 -Ajout d'un fond d'écran 
+
+-Ajout d'effet sonore et visuel
 
 
 
