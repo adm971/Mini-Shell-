@@ -3,14 +3,13 @@
 #include <string.h>
 #include <unistd.h>
 #include <sys/wait.h>
-
 #define MAX_LINE 1024
 #define MAX_ARGS 64
 
 
 
 		// Fonction pour afficher le prompt
-		void print_prompt() {
+		void print() {
 			char cwd[1024];
 			getcwd(cwd, sizeof(cwd));
 			printf("MINI-SHELL PERSO \n :%s$ ", cwd);
@@ -23,7 +22,7 @@
 
 
 		// Fonction pour parser la commande
-		void parse_input(char *input, char **args) {
+		void parse(char *input, char **args) {
 			int i = 0;
 
 			args[i] = strtok(input, " \n");
@@ -50,14 +49,14 @@ int main() {
 
     while (1) {
 		
-        print_prompt();
+        print();
 
         if (fgets(input, MAX_LINE, stdin) == NULL) {
             printf("\n");
             break;
         }
 
-        parse_input(input, args);
+        parse(input, args);
 
         if (args[0] == NULL) {
             continue;
