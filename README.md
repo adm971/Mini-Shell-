@@ -1,5 +1,5 @@
 # Mini-Shell
-Un shell simple que j'ai codé en C pour Linux 
+Un shell simple que j'ai codé en C pour Linux dans le but de personnaliser mon terminal
 
 C'est mon premier projet en C
 
